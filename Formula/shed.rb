@@ -8,8 +8,8 @@ class Shed < Formula
   depends_on "uv"
 
   def install
-    lib.install "shed.sh" => "shed/shed.sh"
-    bin.install "bin/shed"
+  (lib/"shed").install "shed.sh"
+  bin.install "bin/shed"
   end
 
   def caveats
